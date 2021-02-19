@@ -26,4 +26,33 @@ public class Operacion {
 			}
 		}
 		return esPrimo;
-	}
+
+
+		/***
+		 * Metodo que calcula dado un numero entero n, entregue el numero primo n
+		 * Usara el metodo
+		 * @see  #esPrimo()
+		 * @param numero  parametro que se correspondera al n-esimo numero primo
+		 * @return  devolvera el numero primo n correspondiente
+		 */
+		public int iEsimoPrimo(int numero) {
+
+			boolean encontrado = false;
+			int x = 0, contPrimo = 0, resultado = 0;
+			while(!encontrado) {
+				if(!esPrimo(x)) {
+					x++;
+				} else {
+					if(contPrimo == numero) {
+						resultado = x;
+						encontrado = true;
+					} else {
+						contPrimo++;
+						x++;
+					}
+				}
+			}
+
+			return resultado;
+
+		}
