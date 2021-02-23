@@ -26,6 +26,7 @@ public class Operacion {
 			}
 		}
 		return esPrimo;
+	}
 
 
 		/***
@@ -56,3 +57,20 @@ public class Operacion {
 			return resultado;
 
 		}
+
+		/***
+ 		* Metodo para calcular el factorial de un numero
+ 		* Se optará por usar un metodo recursivo
+ 		*
+ 		* @param numero  parametro a la que se aplicara la recursividad
+ 		* @return  resultado de aplicar la recursividad
+ 		*/
+		public int factorial(int numero) {
+
+			if (numero == 0) {
+				return 1;
+			} else  {
+				return numero * factorial(numero-1);
+			}
+		}
+	}
