@@ -21,7 +21,7 @@ public class Operacion {
 		} else {
 			if (numero == 2 || numero == 3) {
 				esPrimo = true;
-			} else if (numero%2 != 0 || numero%3 != 0) {
+			} else if (numero%2 == 0 || numero%3 == 0) {
 				esPrimo = false;;
 			}
 		}
