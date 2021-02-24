@@ -59,6 +59,19 @@ public class Operacion {
 		}
 
 		/***
+ 	* Metodo para calcular el porcentaje
+ 	*
+ 	* @param num1  cantidad sobre el que se queire ver el porcentaje
+ 	* @param num2  el porcentaje que quiero aplicar al primer parametro
+ 	* @return  porcentaje aplicado al parametro 1
+ 	*/
+	public Double porcentaje(Double num1, Double num2) {
+
+		return num1*(num2/100);
+	}
+
+
+		/***
  		* Metodo para calcular el factorial de un numero
  		* Se optará por usar un metodo recursivo
  		*
