@@ -57,4 +57,17 @@ public class Cociente {
 	public static double inverso (double numero) {
 		return 1/numero;
 	}
+
+
+	/**
+ 	* Metodo que te da la raiz cuadrada del nimero introducido.
+ 	* @param numero El numero al que se le hace la raiz.
+ 	* @return La raiz del numero.
+ 	* 
+	 * Si el numero introducido es 0 el resultado sera 0.
+	 */
+	public static double raiz(double numero) {
+		return Math.pow(numero,  0.5);
+	}
+
 }
