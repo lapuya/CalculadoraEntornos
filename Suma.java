@@ -48,6 +48,11 @@ public class ClaseSuma {
 		
 		this.param1 += param1;
 	}
+	public int sumatoria(int sum1, int sum2, int sum3) {
+		int resultado=0;
+		resultado = sum1 + sum2 + sum3;
+		return resultado;
+	}
 	public int getParam1() {
 		return param1;
 	}
