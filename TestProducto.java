@@ -3,11 +3,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TestProducto {
-	private Producto cut = new Producto();
+	 Producto cut = new Producto();
+	 
 	public void setUp() {
 				cut = new Producto();
 	}
-
+	public void tearDown() {
+	}
 	@Test
 	void testNumerosDosReales() {
 		// Arrange - Preparar
@@ -61,5 +63,7 @@ class TestProducto {
 		assertEquals(esperado, resultado);
 		
 	}
+
+}
 
 }
